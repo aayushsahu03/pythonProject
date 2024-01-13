@@ -2,7 +2,10 @@ from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
 from ui import QuizInterface
+import os
 
+# absolute_path = os.path.dirname(__file__)
+# print(absolute_path)
 question_bank = []
 for question in question_data:
     question_text = question["question"]

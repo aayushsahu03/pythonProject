@@ -46,6 +46,7 @@ class QuizInterface:
             q_text = self.quiz.next_question()
             self.canvas.itemconfig(self.question_text, text=q_text)
         else:
+            self.score_label.config(text="Score:"+" "*3+str(self.quiz.score),font=("Arial",10,"bold"))
             self.canvas.itemconfig(self.question_text,text="You have reached the end of Quiz!\n\n"
                                                            "Your score is : {}".format(self.quiz.score))
             self.true_button.config(state="disabled")
