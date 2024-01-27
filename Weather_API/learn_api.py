@@ -19,5 +19,3 @@ def sunrise_data():
 
 
 sunrise_data()
-
-
